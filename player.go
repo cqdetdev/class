@@ -102,7 +102,7 @@ func InClass(inv inventory.Armour, class Class) bool {
 	tiers := class.Armour()
 
 	helmet := item.Helmet{Tier: tiers.Helmet}
-	chestplate := item.Chestplate{Tier: tiers.Chestlate}
+	chestplate := item.Chestplate{Tier: tiers.Chestplate}
 	leggings := item.Leggings{Tier: tiers.Leggings}
 	boots := item.Boots{Tier: tiers.Boots}
 	return inv.Helmet().Item() == helmet && inv.Chestplate().Item() == chestplate && inv.Leggings().Item() == leggings && inv.Boots().Item() == boots
